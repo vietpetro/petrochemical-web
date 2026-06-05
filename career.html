@@ -405,6 +405,19 @@
   function toggleMenu(){
     document.getElementById('navLinks').classList.toggle('open')
   }
+  
+  // Set active nav for Career page
+  window.addEventListener('load', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      const href = link.getAttribute('href');
+      // Highlight "Tuyển dụng" link
+      if (href && (href.includes('career') || link.textContent.includes('Tuyển dụng'))) {
+        link.classList.add('active');
+      }
+    });
+  });
 </script>
 
 </body>

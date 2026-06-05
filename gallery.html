@@ -298,6 +298,19 @@
   lightbox.addEventListener('click', (e) => {
     if(e.target === lightbox) closeLightbox();
   });
+
+  // Set active nav for Gallery page
+  window.addEventListener('load', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      const href = link.getAttribute('href');
+      // Highlight "Thư viện ảnh" link
+      if (href && (href.includes('gallery') || link.textContent.includes('Thư viện'))) {
+        link.classList.add('active');
+      }
+    });
+  });
 </script>
 
 </body>
