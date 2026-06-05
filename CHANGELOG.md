@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 2026-06-05 v2.2 - Logo Proportion Adjustment (Tall Logo)
+
+### Fixed
+- Thay đổi tỷ lệ logo để chữ D trong logo hiển thị vuông và cân đối hơn:
+  - Header logo: height 120px, max-width 45px (tăng chiều cao +40px, giảm chiều rộng -35px so với 80x80)
+  - Footer logo: height 130px, max-width 55px (tăng +40px, giảm -35px so với 90x90)
+  - Mobile logo: height 105px, max-width 30px (tăng +40px, giảm -35px so với 65x65)
+- Header height giữ 90px (đã đủ để chứa logo 120px? thực tế cần điều chỉnh header height).
+  → Tăng header height lên 130px để chứa logo 120px với padding.
+
+### Technical
+- Logo giờ hiển thị dạng thẳng cao, phù hợp với logo DCorp có chữ D cần chiều cao hơn.
+- `object-fit: contain` giữ tỷ lệ, không méo.
+- Đã áp dụng đồng bộ trên 3 trang: homepage-xang-dau-hat-nhua.html, career.html, gallery.html.
+
+---
+
 ## 2026-06-05 v2.1 - Logo Height Optimization
 
 ### Fixed
@@ -30,12 +47,12 @@
 - Thiết kế lại Header:
   - Bố cục mới: Logo + DCORP + tagline "Thương mại và Dầu khí".
   - Header cao 85px trên desktop.
-  - Logo cao 80px, `max-width: 80px`, `object-fit: contain`, giữ đúng tỷ lệ vuông.
+  - Logo cao 60px, `max-width: 60px`, `object-fit: contain`, giữ đúng tỷ lệ vuông.
   - Màu thương hiệu: `#003A99`.
   - Tagline màu `#666666`.
 - Thiết kế lại Footer:
   - 4 cột: thương hiệu, sản phẩm, dịch vụ, liên hệ/mạng xã hội.
-  - Logo footer cao 90px, giữ đúng tỷ lệ.
+  - Logo footer cao 70px, `max-width: 70px`, giữ đúng tỷ lệ.
 - Chuẩn hóa hệ màu:
   - Primary: `#003A99`
   - Secondary: `#0B6DDB`
