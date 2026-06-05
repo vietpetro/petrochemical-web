@@ -1,6 +1,22 @@
 # CHANGELOG
 
-## 2026-06-05 - DCorp Brand Redesign
+## 2026-06-05 v2.1 - Logo Height Optimization
+
+### Fixed
+- Tăng chiều cao logo từ 60px lên 80px trên header để chữ D trong logo hiển thị vuông và cân đối hơn.
+- Tăng chiều cao logo footer từ 70px lên 90px.
+- Tăng chiều cao logo mobile từ 50px lên 65px.
+- Logo giờ hiển thị tỷ lệ vuông hoàn hảo, không bị méo hay kéo dài.
+
+### Technical
+- Header height vẫn 85px, logo lớn hơn tạo thị giác chuyên nghiệp hơn.
+- Footer logo 90px giúp logo nổi bật hơn.
+- Mobile logo 65px phù hợp với viewport nhỏ.
+- Áp dụng trên cả 3 trang: homepage, career, gallery.
+
+---
+
+## 2026-06-05 v2.0 - DCorp Brand Redesign
 
 ### Added
 - Tạo lại nhận diện website DCorp theo phong cách B2B cao cấp cho lĩnh vực xăng dầu, hóa dầu, hạt nhựa công nghiệp và logistics năng lượng.
@@ -14,12 +30,12 @@
 - Thiết kế lại Header:
   - Bố cục mới: Logo + DCORP + tagline "Thương mại và Dầu khí".
   - Header cao 85px trên desktop.
-  - Logo cao 60px, `max-width: 60px`, `object-fit: contain`, giữ đúng tỷ lệ vuông.
+  - Logo cao 80px, `max-width: 80px`, `object-fit: contain`, giữ đúng tỷ lệ vuông.
   - Màu thương hiệu: `#003A99`.
   - Tagline màu `#666666`.
 - Thiết kế lại Footer:
   - 4 cột: thương hiệu, sản phẩm, dịch vụ, liên hệ/mạng xã hội.
-  - Logo footer cao 70px, `max-width: 70px`, giữ đúng tỷ lệ.
+  - Logo footer cao 90px, giữ đúng tỷ lệ.
 - Chuẩn hóa hệ màu:
   - Primary: `#003A99`
   - Secondary: `#0B6DDB`
