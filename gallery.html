@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thư viện ảnh — DCorp</title>
+<meta name="description" content="Thư viện hình ảnh hoạt động của DCorp - Văn phòng, Kho hàng, Hội nghị, Team Building.">
+<meta property="og:title" content="Thư viện ảnh — DCorp">
+<meta property="og:description" content="Khám phá hình ảnh về văn phòng, kho hàng và hoạt động của DCorp.">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --primary:#003A99;
+    --secondary:#0B6DDB;
+    --accent:#FF9900;
+    --bg-dark:#0B1426;
+    --bg-section:#F5F7FA;
+    --text:#1A1A1A;
+    --text-light:#666666;
+    --white:#FFFFFF;
+    --radius:12px;
+    --shadow:0 8px 32px rgba(0,0,0,.08);
+    --shadow-lg:0 20px 60px rgba(0,0,0,.12);
+    --transition:.3s cubic-bezier(.4,0,.2,1);
+    --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+
+  /* ─── HEADER / NAV ─── */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0;transition:var(--transition);background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.05)}
+  .nav.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(16px);box-shadow:0 4px 30px rgba(0,0,0,.1)}
+  .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:85px}
+  .logo-container{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo-img{height:60px;width:auto;object-fit:contain;display:block}
+  .brand-info{display:flex;flex-direction:column;justify-content:center}
+  .brand-name{font-size:24px;font-weight:800;color:var(--primary);letter-spacing:0.5px;line-height:1.1}
+  .brand-tagline{font-size:13px;font-weight:500;color:var(--text-light);letter-spacing:0.2px}
+  .nav-links{display:flex;gap:32px;align-items:center;list-style:none}
+  .nav-links a{color:var(--text);text-decoration:none;font-size:14px;font-weight:600;transition:var(--transition);position:relative;padding:8px 0}
+  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+  .nav-links a:hover{color:var(--primary)}.nav-links a:hover::after{width:100%}
+  .nav-cta{background:var(--primary);color:var(--white)!important;padding:10px 24px;border-radius:8px;font-weight:600!important}
+  .nav-cta:hover{background:var(--secondary)!important}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+  .hamburger span{width:24px;height:2px;background:var(--primary);border-radius:2px;transition:var(--transition)}
+
+  /* ─── HERO ─── */
+  .hero{
+    min-height:40vh;
+    background:linear-gradient(135deg,var(--bg-dark) 0%,#0F1E35 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:100px;
+  }
+  .hero h1{font-size:clamp(32px,4vw,48px);font-weight:800;color:var(--white);margin-bottom:16px}
+  .hero p{font-size:clamp(16px,1.2vw,18px);color:rgba(255,255,255,.7);max-width:600px}
+
+  /* ─── GALLERY ─── */
+  .gallery-section{padding:80px 0}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+  .section-title{font-size:clamp(28px,2.8vw,42px);font-weight:800;color:var(--text);margin-bottom:12px;letter-spacing:-.5px;text-align:center}
+  .section-sub{font-size:17px;color:var(--text-light);text-align:center;margin-bottom:48px}
+  
+  .gallery-filter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+  .filter-btn{background:var(--bg-section);border:none;padding:10px 24px;border-radius:50px;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;transition:var(--transition)}
+  .filter-btn.active,.filter-btn:hover{background:var(--primary);color:var(--white)}
+  
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+  .gallery-item{position:relative;overflow:hidden;border-radius:var(--radius);cursor:pointer;aspect-ratio:4/3;background:var(--bg-section)}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;transition:var(--transition)}
+  .gallery-item:hover img{transform:scale(1.05)}
+  .gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);opacity:0;transition:var(--transition);display:flex;align-items:flex-end;padding:20px}
+  .gallery-item:hover .gallery-overlay{opacity:1}
+  .gallery-info{color:var(--white);transform:translateY(20px);transition:var(--transition)}
+  .gallery-item:hover .gallery-info{transform:translateY(0)}
+  .gallery-info h3{font-size:18px;font-weight:700;margin-bottom:4px}
+  .gallery-info p{font-size:13px;opacity:.8}
+
+  /* ─── LIGHTBOX ─── */
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:1000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+  .lightbox.active{display:flex;opacity:1}
+  .lightbox-content{position:relative;max-width:90%;max-height:90%;transform:scale(.9);transition:var(--transition)}
+  .lightbox.active .lightbox-content{transform:scale(1)}
+  .lightbox-img{max-width:100%;max-height:85vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lightbox-close{position:absolute;top:-40px;right:0;background:none;border:none;color:var(--white);font-size:32px;cursor:pointer}
+  .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:var(--white);font-size:24px;width:50px;height:50px;border-radius:50%;cursor:pointer;transition:var(--transition)}
+  .lightbox-nav:hover{background:var(--primary)}
+  .lightbox-prev{left:20px}
+  .lightbox-next{right:20px}
+
+  /* ─── FOOTER ─── */
+  footer{background:var(--bg-dark);padding:48px 0 24px;border-top:1px solid rgba(255,255,255,.06)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+  .footer-brand .logo-img{height:70px;margin-bottom:16px}
+  .footer-brand p{color:rgba(255,255,255,.5);font-size:14px;line-height:1.7;margin-top:16px;max-width:300px}
+  .footer-col h4{color:var(--white);font-size:15px;font-weight:700;margin-bottom:20px;text-transform:uppercase}
+  .footer-col ul{list-style:none}
+  .footer-col ul li{margin-bottom:12px}
+  .footer-col ul li a{color:rgba(255,255,255,.5);text-decoration:none;font-size:14px;transition:var(--transition)}
+  .footer-col ul li a:hover{color:var(--accent)}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;text-align:center;color:rgba(255,255,255,.3);font-size:14px}
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:900px){
+    .nav-links{display:none;position:fixed;top:85px;left:0;right:0;background:var(--white);flex-direction:column;padding:24px;gap:16px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+    .nav-links.open{display:flex}
+    .hamburger{display:flex}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  }
+  @media(max-width:600px){
+    .nav-inner{height:70px}
+    .logo-img{height:50px}
+    .brand-name{font-size:20px}
+    .gallery-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="homepage-xang-dau-hat-nhua.html" class="logo-container">
+      <img src="file://C:\Users\DidierChan\.openclaw\media\inbound\5b5dd30a-658d-496c-9731-a29cbf28d056.jpg" alt="DCorp Logo" class="logo-img">
+      <div class="brand-info">
+        <div class="brand-name">DCORP</div>
+        <div class="brand-tagline">Thương mại và Dầu khí</div>
+      </div>
+    </a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage-xang-dau-hat-nhua.html#about">Giới thiệu</a></li>
+      <li><a href="homepage-xang-dau-hat-nhua.html#products">Sản phẩm</a></li>
+      <li><a href="#">Thư viện ảnh</a></li>
+      <li><a href="career.html" class="nav-cta">Tuyển dụng</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="container">
+    <h1>Thư Viện Ảnh DCorp</h1>
+    <p>Khoảnh khắc đáng nhớ trong hành trình phát triển của chúng tôi.</p>
+  </div>
+</section>
+
+<!-- ─── GALLERY ─── -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">Tất cả</button>
+      <button class="filter-btn" data-filter="office">Văn phòng</button>
+      <button class="filter-btn" data-filter="warehouse">Kho hàng</button>
+      <button class="filter-btn" data-filter="event">Hội nghị</button>
+      <button class="filter-btn" data-filter="team">Team Building</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Office -->
+      <div class="gallery-item" data-category="office">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23003A99'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EVăn phòng DCorp%3C/text%3E%3C/svg%3E" alt="Văn phòng DCorp" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Văn phòng DCorp</h3><p>Tầm nhìn & Làm việc</p></div></div>
+      </div>
+      <div class="gallery-item" data-category="office">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%230B6DDB'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EPhòng họp%3C/text%3E%3C/svg%3E" alt="Phòng họp" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Phòng họp</h3><p>Họp chiến lược</p></div></div>
+      </div>
+
+      <!-- Warehouse -->
+      <div class="gallery-item" data-category="warehouse">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23F57C00'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EKho hàng DCorp%3C/text%3E%3C/svg%3E" alt="Kho hàng" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Kho hàng DCorp</h3><p>Hàng hóa nguyên liệu</p></div></div>
+      </div>
+      <div class="gallery-item" data-category="warehouse">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23FF9900'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EXe bồn vận chuyển%3C/text%3E%3C/svg%3E" alt="Vận chuyển" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Vận chuyển</h3><p>Xe bồn chở dầu</p></div></div>
+      </div>
+
+      <!-- Event -->
+      <div class="gallery-item" data-category="event">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%231A1A1A'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EHội nghị khách hàng%3C/text%3E%3C/svg%3E" alt="Hội nghị" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Hội nghị khách hàng</h3><p>Gặp gỡ đối tác</p></div></div>
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23666666'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3ELễ ký kết hợp đồng%3C/text%3E%3C/svg%3E" alt="Ký kết" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Lễ ký kết</h3><p>Hợp tác chiến lược</p></div></div>
+      </div>
+
+      <!-- Team -->
+      <div class="gallery-item" data-category="team">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23003A99'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3ETeam Building%3C/text%3E%3C/svg%3E" alt="Team Building" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Team Building</h3><p>Gắn kết & Sáng tạo</p></div></div>
+      </div>
+      <div class="gallery-item" data-category="team">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%230B6DDB'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EĐào tạo nhân viên%3C/text%3E%3C/svg%3E" alt="Đào tạo" loading="lazy">
+        <div class="gallery-overlay"><div class="gallery-info"><h3>Đào tạo nhân viên</h3><p>Nâng cao kỹ năng</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LIGHTBOX ─── -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="changeSlide(-1)">&#10094;</button>
+  <div class="lightbox-content">
+    <img src="" alt="" class="lightbox-img" id="lightbox-img">
+  </div>
+  <button class="lightbox-nav lightbox-next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="file://C:\Users\DidierChan\.openclaw\media\inbound\5b5dd30a-658d-496c-9731-a29cbf28d056.jpg" alt="DCorp Logo" class="logo-img">
+        <p>Đối tác tin cậy trong lĩnh vực cung ứng xăng dầu, hóa dầu và hạt nhựa công nghiệp tại Việt Nam.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <ul><li><a href="#">Dầu DO</a></li><li><a href="#">Dầu FO</a></li><li><a href="#">Hạt nhựa</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <ul><li><a href="#">0901 234 567</a></li><li><a href="#">info@dcorp.com.vn</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 DCorp. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll',()=>{
+    document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60)
+  })
+  // Hamburger
+  function toggleMenu(){
+    document.getElementById('navLinks').classList.toggle('open')
+  }
+
+  // Filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      
+      galleryItems.forEach(item => {
+        if(filter === 'all' || item.dataset.category === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  let currentIndex = 0;
+  const visibleItems = Array.from(galleryItems).filter(i => i.style.display !== 'none');
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      currentIndex = index;
+      const img = item.querySelector('img');
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+  }
+
+  function changeSlide(direction) {
+    // Simplified direction logic
+    alert('Chức năng chuyển ảnh đang được phát triển. Vui lòng click ảnh để xem lại.');
+  }
+
+  lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox) closeLightbox();
+  });
+</script>
+
+</body>
+</html>

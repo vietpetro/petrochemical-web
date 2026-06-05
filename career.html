@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuyển dụng — DCorp</title>
+<meta name="description" content="Gia nhập DCorp - Đối tác tin cậy trong lĩnh vực xăng dầu, hóa dầu và hạt nhựa. Cơ hội nghề nghiệp, phúc lợi hấp dẫn và môi trường chuyên nghiệp.">
+<meta property="og:title" content="Tuyển dụng — DCorp">
+<meta property="og:description" content="Gia nhập DCorp để phát triển sự nghiệp trong ngành năng lượng và công nghiệp.">
+<meta property="og:image" content="og_image.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --primary:#003A99;
+    --secondary:#0B6DDB;
+    --accent:#FF9900;
+    --accent-dark:#F57C00;
+    --accent-glow:rgba(255,153,0,.25);
+    --bg-dark:#0B1426;
+    --bg-section:#F5F7FA;
+    --text:#1A1A1A;
+    --text-light:#666666;
+    --white:#FFFFFF;
+    --radius:12px;
+    --shadow:0 8px 32px rgba(0,0,0,.08);
+    --shadow-lg:0 20px 60px rgba(0,0,0,.12);
+    --transition:.3s cubic-bezier(.4,0,.2,1);
+    --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+
+  /* ─── HEADER / NAV ─── */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0;transition:var(--transition);background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.05)}
+  .nav.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(16px);box-shadow:0 4px 30px rgba(0,0,0,.1)}
+  .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:85px}
+  .logo-container{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo-img{height:60px;width:auto;object-fit:contain;display:block}
+  .brand-info{display:flex;flex-direction:column;justify-content:center}
+  .brand-name{font-size:24px;font-weight:800;color:var(--primary);letter-spacing:0.5px;line-height:1.1}
+  .brand-tagline{font-size:13px;font-weight:500;color:var(--text-light);letter-spacing:0.2px}
+  .nav-links{display:flex;gap:32px;align-items:center;list-style:none}
+  .nav-links a{color:var(--text);text-decoration:none;font-size:14px;font-weight:600;transition:var(--transition);position:relative;padding:8px 0}
+  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+  .nav-links a:hover{color:var(--primary)}.nav-links a:hover::after{width:100%}
+  .nav-cta{background:var(--primary);color:var(--white)!important;padding:10px 24px;border-radius:8px;font-weight:600!important;transition:var(--transition)}
+  .nav-cta::after{display:none!important}
+  .nav-cta:hover{background:var(--secondary)!important;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,58,153,.3)}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+  .hamburger span{width:24px;height:2px;background:var(--primary);border-radius:2px;transition:var(--transition)}
+
+  /* ─── HERO ─── */
+  .hero{
+    min-height:60vh;
+    background:linear-gradient(135deg,var(--bg-dark) 0%,#0F1E35 50%,#0B1426 100%);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero-glow{
+    position:absolute;
+    top:-30%;right:-10%;
+    width:600px;height:600px;
+    background:radial-gradient(circle,rgba(0,107,219,.15),transparent 70%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;z-index:2;
+    max-width:800px;margin:0 auto;padding:120px 24px 80px;
+  }
+  .hero h1{
+    font-size:clamp(36px,4.5vw,56px);
+    font-weight:800;line-height:1.15;color:var(--white);
+    margin-bottom:24px;letter-spacing:-1px;
+  }
+  .hero p{
+    font-size:clamp(16px,1.2vw,20px);
+    color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto;
+  }
+
+  /* ─── SECTION COMMON ─── */
+  section{padding:80px 0}
+  .section-tag{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(0,58,153,.1);color:var(--primary);
+    padding:6px 14px;border-radius:50px;font-size:12px;font-weight:600;margin-bottom:16px;
+  }
+  .section-title{font-size:clamp(28px,2.8vw,42px);font-weight:800;color:var(--text);margin-bottom:12px;letter-spacing:-.5px;text-align:center}
+  .section-sub{font-size:17px;color:var(--text-light);max-width:600px;line-height:1.7;text-align:center;margin:0 auto 48px}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  /* ─── CULTURE ─── */
+  #culture{background:var(--bg-section)}
+  .culture-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .culture-card{background:var(--white);border-radius:var(--radius);padding:32px;text-align:center;box-shadow:var(--shadow);transition:var(--transition)}
+  .culture-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .culture-icon{font-size:48px;margin-bottom:20px}
+  .culture-title{font-size:20px;font-weight:700;color:var(--text);margin-bottom:12px}
+  .culture-desc{font-size:15px;color:var(--text-light);line-height:1.6}
+
+  /* ─── BENEFITS ─── */
+  #benefits{background:var(--white)}
+  .benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:48px}
+  .benefit-item{display:flex;align-items:flex-start;gap:16px;padding:24px;background:var(--bg-section);border-radius:var(--radius);transition:var(--transition)}
+  .benefit-item:hover{transform:translateX(4px);border-left:4px solid var(--primary)}
+  .benefit-icon{font-size:24px;min-width:48px;height:48px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white)}
+  .benefit-content h4{font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px}
+  .benefit-content p{font-size:14px;color:var(--text-light);line-height:1.5}
+
+  /* ─── OPENINGS ─── */
+  #openings{background:var(--bg-section)}
+  .jobs-list{display:grid;grid-template-columns:1fr;gap:16px;max-width:800px;margin:0 auto}
+  .job-card{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;transition:var(--transition);cursor:pointer;border:1px solid transparent}
+  .job-card:hover{border-color:var(--primary);transform:translateY(-2px)}
+  .job-info h3{font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px}
+  .job-info p{font-size:14px;color:var(--text-light)}
+  .job-meta{display:flex;gap:16px;font-size:13px;color:var(--text-light)}
+  .job-apply{background:var(--primary);color:var(--white);padding:10px 20px;border-radius:8px;font-weight:600;text-decoration:none;transition:var(--transition)}
+  .job-apply:hover{background:var(--secondary)}
+
+  /* ─── FORM ─── */
+  #apply{background:var(--white)}
+  .apply-form{max-width:600px;margin:0 auto;background:var(--white);padding:40px;border-radius:var(--radius);box-shadow:var(--shadow-lg);border:1px solid rgba(0,0,0,.05)}
+  .form-group{margin-bottom:20px}
+  .form-group label{display:block;font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px}
+  .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1px solid #e2e8f0;border-radius:8px;font-size:15px;font-family:var(--font);transition:var(--transition);background:#f8fafc}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,58,153,.1);background:var(--white)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .btn-submit{width:100%;background:linear-gradient(135deg,var(--accent),#FFB84D);color:var(--white);font-weight:700;font-size:16px;padding:14px;border-radius:10px;border:none;cursor:pointer;transition:var(--transition);box-shadow:0 4px 15px var(--accent-glow)}
+  .btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,153,0,.4)}
+
+  /* ─── FOOTER ─── */
+  footer{background:var(--bg-dark);padding:64px 0 24px;border-top:1px solid rgba(255,255,255,.06)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+  .footer-brand .logo-img{height:70px;margin-bottom:16px}
+  .footer-brand p{color:rgba(255,255,255,.5);font-size:14px;line-height:1.7;margin-top:16px;max-width:300px}
+  .footer-col h4{color:var(--white);font-size:15px;font-weight:700;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.5px}
+  .footer-col ul{list-style:none}
+  .footer-col ul li{margin-bottom:12px}
+  .footer-col ul li a{color:rgba(255,255,255,.5);text-decoration:none;font-size:14px;transition:var(--transition)}
+  .footer-col ul li a:hover{color:var(--accent)}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;text-align:center;color:rgba(255,255,255,.3);font-size:14px}
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:900px){
+    .nav-links{display:none;position:fixed;top:85px;left:0;right:0;background:var(--white);flex-direction:column;padding:24px;gap:16px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+    .nav-links.open{display:flex}
+    .hamburger{display:flex}
+    .culture-grid{grid-template-columns:1fr}
+    .job-card{flex-direction:column;align-items:flex-start;gap:16px}
+    .job-apply{width:100%;text-align:center}
+  }
+  @media(max-width:600px){
+    .nav-inner{height:70px}
+    .logo-img{height:50px}
+    .brand-name{font-size:20px}
+    .form-row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="homepage-xang-dau-hat-nhua.html" class="logo-container">
+      <img src="file://C:\Users\DidierChan\.openclaw\media\inbound\5b5dd30a-658d-496c-9731-a29cbf28d056.jpg" alt="DCorp Logo" class="logo-img">
+      <div class="brand-info">
+        <div class="brand-name">DCORP</div>
+        <div class="brand-tagline">Thương mại và Dầu khí</div>
+      </div>
+    </a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage-xang-dau-hat-nhua.html#about">Giới thiệu</a></li>
+      <li><a href="homepage-xang-dau-hat-nhua.html#products">Sản phẩm</a></li>
+      <li><a href="homepage-xang-dau-hat-nhua.html#advantages">Ưu điểm</a></li>
+      <li><a href="#" class="nav-cta">Tuyển dụng</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <h1>Gia Nhập Đội Ngũ DCorp</h1>
+    <p>Trở thành một phần của tập đoàn năng lượng hàng đầu. Chúng tôi tìm kiếm những tài năng sẵn sàng vươn xa cùng chúng tôi.</p>
+  </div>
+</section>
+
+<!-- ─── CULTURE ─── -->
+<section id="culture">
+  <div class="container">
+    <div class="section-tag">🏢 Văn hóa doanh nghiệp</div>
+    <h2 class="section-title">Môi trường làm việc chuyên nghiệp</h2>
+    <p class="section-sub">Tại DCorp, chúng tôi không chỉ làm việc, chúng tôi cùng nhau phát triển.</p>
+    
+    <div class="culture-grid">
+      <div class="culture-card">
+        <div class="culture-icon">🎯</div>
+        <h3 class="culture-title">Tầm nhìn chiến lược</h3>
+        <p class="culture-desc">Làm việc với các dự án lớn, có tầm ảnh hưởng đến ngành công nghiệp năng lượng quốc gia.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-icon">🤝</div>
+        <h3 class="culture-title">Đoàn kết & Hợp tác</h3>
+        <p class="culture-desc">Môi trường cởi mở, hỗ trợ lẫn nhau và luôn lắng nghe ý kiến đóng góp.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-icon">🚀</div>
+        <h3 class="culture-title">Phát triển sự nghiệp</h3>
+        <p class="culture-desc">Con đường thăng tiến rõ ràng, cơ hội đào tạo và nâng cao kỹ năng.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BENEFITS ─── -->
+<section id="benefits">
+  <div class="container">
+    <div class="section-tag">🎁 Phúc lợi hấp dẫn</div>
+    <h2 class="section-title">Phúc lợi dành cho nhân viên</h2>
+    <p class="section-sub">Chúng tôi chăm sóc đời sống của bạn để bạn yên tâm cống hiến.</p>
+    
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-content">
+          <h4>Lương thưởng hấp dẫn</h4>
+          <p>Lương cạnh tranh thị trường, thưởng KPI và thưởng dịp lễ Tết.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🏥</div>
+        <div class="benefit-content">
+          <h4>Bảo hiểm toàn diện</h4>
+          <p>Bảo hiểm xã hội, y tế, thất nghiệp và bảo hiểm nhân thọ.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🏖️</div>
+        <div class="benefit-content">
+          <h4>Nghỉ phép & Du lịch</h4>
+          <p>Phép năm 12 ngày, ngày nghỉ thêm và team building hàng năm.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">📚</div>
+        <div class="benefit-content">
+          <h4>Đào tạo & Phát triển</h4>
+          <p>Cơ hội tham gia các khóa đào tạo chuyên sâu trong và ngoài nước.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🍽️</div>
+        <div class="benefit-content">
+          <h4>Cơ sở vật chất</h4>
+          <p>Phòng làm việc hiện đại, trang thiết bị cao cấp, nghỉ trưa tiện lợi.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🎉</div>
+        <div class="benefit-content">
+          <h4>Hoạt động tập thể</h4>
+          <p>Các ngày lễ, sinh nhật công ty, thể thao, giải trí.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OPENINGS ─── -->
+<section id="openings">
+  <div class="container">
+    <div class="section-tag">💼 Cơ hội nghề nghiệp</div>
+    <h2 class="section-title">Vị trí đang tuyển dụng</h2>
+    <p class="section-sub">Tìm kiếm vị trí phù hợp với bạn và gia nhập đội ngũ DCorp ngay hôm nay.</p>
+    
+    <div class="jobs-list">
+      <div class="job-card">
+        <div class="job-info">
+          <h3>Kỹ sư Kinh doanh (B2B)</h3>
+          <p>Kinh doanh các sản phẩm dầu nhờn, hạt nhựa.</p>
+          <div class="job-meta"><span>📍 TP. Hồ Chí Minh</span><span>🕒 Toàn thời gian</span></div>
+        </div>
+        <a href="#apply" class="job-apply">Ứng tuyển</a>
+      </div>
+      <div class="job-card">
+        <div class="job-info">
+          <h3>Chuyên viên Logistic</h3>
+          <p>Quản lý vận chuyển, giao nhận hàng hóa.</p>
+          <div class="job-meta"><span>📍 TP. Hồ Chí Minh</span><span>🕒 Toàn thời gian</span></div>
+        </div>
+        <a href="#apply" class="job-apply">Ứng tuyển</a>
+      </div>
+      <div class="job-card">
+        <div class="job-info">
+          <h3>Kế toán trưởng</h3>
+          <p>Quản lý tài chính, báo cáo thuế, tài chính.</p>
+          <div class="job-meta"><span>📍 TP. Hồ Chí Minh</span><span>🕒 Toàn thời gian</span></div>
+        </div>
+        <a href="#apply" class="job-apply">Ứng tuyển</a>
+      </div>
+      <div class="job-card">
+        <div class="job-info">
+          <h3>Nhân viên Kho bãi</h3>
+          <p>Quản lý xuất nhập kho hàng hóa.</p>
+          <div class="job-meta"><span>📍 Đồng Nai</span><span>🕒 Toàn thời gian</span></div>
+        </div>
+        <a href="#apply" class="job-apply">Ứng tuyển</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── APPLY FORM ─── -->
+<section id="apply">
+  <div class="container">
+    <h2 class="section-title">Gửi hồ sơ ứng tuyển</h2>
+    <p class="section-sub">Điền thông tin bên dưới, chúng tôi sẽ liên hệ lại nếu hồ sơ phù hợp.</p>
+    
+    <form class="apply-form" action="mailto:hr@dcorp.com.vn" method="post" enctype="text/plain">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Họ và tên *</label>
+          <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="0901 234 567">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="position">Vị trí ứng tuyển *</label>
+          <select id="position" name="position" required>
+            <option value="">Chọn vị trí</option>
+            <option value="Kỹ sư Kinh doanh">Kỹ sư Kinh doanh</option>
+            <option value="Chuyên viên Logistic">Chuyên viên Logistic</option>
+            <option value="Kế toán trưởng">Kế toán trưởng</option>
+            <option value="Nhân viên Kho bãi">Nhân viên Kho bãi</option>
+            <option value="Khác">Khác</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="experience">Kinh nghiệm làm việc</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Mô tả ngắn gọn kinh nghiệm làm việc trước đây..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="file">Đính kèm hồ sơ (PDF)</label>
+        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx">
+      </div>
+      <button type="submit" class="btn-submit">Gửi hồ sơ</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="file://C:\Users\DidierChan\.openclaw\media\inbound\5b5dd30a-658d-496c-9731-a29cbf28d056.jpg" alt="DCorp Logo" class="logo-img">
+        <p>Đối tác tin cậy trong lĩnh vực cung ứng xăng dầu, hóa dầu và hạt nhựa công nghiệp tại Việt Nam.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <ul><li><a href="#">Dầu DO</a></li><li><a href="#">Dầu FO</a></li><li><a href="#">Hạt nhựa PP</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Dịch vụ</h4>
+        <ul><li><a href="#">Báo giá</a></li><li><a href="#">Giao hàng</a></li><li><a href="#">Tuyển dụng</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <ul><li><a href="tel:+84901234567">📞 0901 234 567</a></li><li><a href="mailto:info@dcorp.com.vn">📧 info@dcorp.com.vn</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 DCorp. Bản quyền thuộc về công ty.</div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll',()=>{
+    document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60)
+  })
+  // Hamburger
+  function toggleMenu(){
+    document.getElementById('navLinks').classList.toggle('open')
+  }
+</script>
+
+</body>
+</html>
