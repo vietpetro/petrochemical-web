@@ -14,12 +14,12 @@
 - Thiết kế lại Header:
   - Bố cục mới: Logo + DCORP + tagline "Thương mại và Dầu khí".
   - Header cao 85px trên desktop.
-  - Logo cao 60px, `object-fit: contain`, giữ đúng tỷ lệ.
+  - Logo cao 60px, `max-width: 60px`, `object-fit: contain`, giữ đúng tỷ lệ vuông.
   - Màu thương hiệu: `#003A99`.
   - Tagline màu `#666666`.
 - Thiết kế lại Footer:
   - 4 cột: thương hiệu, sản phẩm, dịch vụ, liên hệ/mạng xã hội.
-  - Logo footer cao 70px, giữ đúng tỷ lệ.
+  - Logo footer cao 70px, `max-width: 70px`, giữ đúng tỷ lệ.
 - Chuẩn hóa hệ màu:
   - Primary: `#003A99`
   - Secondary: `#0B6DDB`
@@ -35,6 +35,7 @@
 - Responsive menu tối ưu cho tablet/mobile.
 
 ### Fixed
+- Sửa lỗi logo bị kéo dài ngang bằng cách thêm `max-width` cho `.logo-img`.
 - Sửa lỗi logo có nguy cơ bị ép méo bằng `height`, `width:auto`, `object-fit:contain`.
 - Sửa nhận diện cũ không đồng bộ với DCorp.
 - Sửa thiếu favicon và Open Graph image.
