@@ -4,8 +4,14 @@ businessUnits:
     banner: /assets/banners/petro-hero.jpg
     intro: "Đối tác chiến lược trong lĩnh vực cung ứng xăng dầu, đảm bảo an ninh năng lượng cho sản xuất và vận tải."
     services:
-      - title: "Dầu DO"
-        desc: "Dầu Diesel tiêu chuẩn cao cho vận tải và máy móc công nghiệp."
+      - title: "Dầu DO 0,05"
+        desc: "Dầu Diesel hàm lượng lưu huỳnh tối đa 0,05% (500mg/kg). Đáp ứng tiêu chuẩn TCVN, phù hợp cho đa số động cơ Diesel hiện nay, đảm bảo hiệu suất vận hành ổn định và bảo vệ động cơ."
+      - title: "Dầu DO 0,001 (Euro 5)"
+        desc: "Dầu Diesel siêu sạch hàm lượng lưu huỳnh tối đa 0,001% (10mg/kg). Đạt tiêu chuẩn khí thải Euro 5, dành cho các động cơ đời mới, giảm thiểu tối đa khí thải độc hại và muội than."
+      - title: "Xăng E10"
+        desc: "Xăng sinh học pha trộn 10% Ethanol. Giải pháp năng lượng bền vững, chỉ số Octane cao giúp tăng hiệu suất đốt cháy và giảm phát thải khí nhà kính."
+      - title: "Xăng E5"
+        desc: "Xăng sinh học pha trộn 5% Ethanol. Tiêu chuẩn quốc gia TCVN, tối ưu hóa quá trình đốt cháy, phù hợp với hầu hết các dòng xe hiện hành và thân thiện với môi trường."
       - title: "Dầu FO"
         desc: "Nhiên liệu đốt lò hiệu suất tối ưu cho nhà máy."
       - title: "Dầu nhờn"
