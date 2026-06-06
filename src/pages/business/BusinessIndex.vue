@@ -13,7 +13,9 @@
 
 <script setup>
 import { ref } from 'vue';
-import unitsData from '@/data/business-units.yaml';
+import rawData from '@/data/business-units.yaml?raw';
+import { parse } from 'yaml';
+const unitsData = parse(rawData);
 const units = ref(unitsData.businessUnits);
 </script>
 

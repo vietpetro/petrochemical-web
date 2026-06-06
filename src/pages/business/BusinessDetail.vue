@@ -35,8 +35,9 @@
 <script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-import unitsData from '@/data/business-units.yaml';
-
+import rawData from '@/data/business-units.yaml?raw';
+import { parse } from 'yaml';
+const unitsData = parse(rawData);
 const route = useRoute();
 const unit = computed(() => {
   return unitsData.businessUnits.find(u => u.id === route.params.unitId);
