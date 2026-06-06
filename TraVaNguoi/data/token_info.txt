@@ -1,0 +1,7 @@
+﻿# Page Tokens - Auto Post
+# Last refreshed: 2026-05-14 14:30:54
+# Type: Long-lived (60 days)
+TraVaNguoi_PageID=1158980210638306
+TraVaNguoi_TokenPrefix=EAAWyTvHLkaABRUkwabrTeLYPNq05v...
+NhanGianDieuKy_PageID=460822140448646
+NhanGianDieuKy_TokenPrefix=EAAWyTvHLkaABRQSUcnMRAmCXZBdfs...

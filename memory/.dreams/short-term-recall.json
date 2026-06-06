@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-22T15:36:44.603Z",
+  "entries": {
+    "memory:memory/2026-05-21.md:1:7": {
+      "key": "memory:memory/2026-05-21.md:1:7",
+      "path": "memory/2026-05-21.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "# 2026-05-21 ## Zalo communication preference - Khi trả lời trên Zalo, xưng là **em** và gọi người dùng là **Sếp**. - Khi được add vào các nhóm Zalo, chủ động tổng hợp thông tin theo công việc của từng nhóm. - Không trò chuyện phiếm với người khác trong nhóm; chỉ trả lời tập trung vào nhiệm vụ/công việc được giao trong nhóm cụ thể.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6340831828646851,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T15:36:19.833Z",
+      "lastRecalledAt": "2026-05-22T15:36:44.603Z",
+      "queryHashes": [
+        "272b130be2b6",
+        "0c27f1fa0da4"
+      ],
+      "recallDays": [
+        "2026-05-22"
+      ],
+      "conceptTags": [
+        "vụ/công",
+        "zalo",
+        "communication",
+        "preference",
+        "khi",
+        "trả",
+        "lời",
+        "trên"
+      ]
+    }
+  }
+}

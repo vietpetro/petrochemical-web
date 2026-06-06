@@ -1,0 +1,134 @@
+{
+  "session_id": "session_20260525_0000",
+  "timestamp": "2026-05-25T00:00:00+07:00",
+  "cycle": "crystal-search-cycle",
+  "sources_checked": [
+    "DexScreener search (403/challenge)",
+    "CoinGecko search (403/challenge)",
+    "CoinMarketCap search/fetch",
+    "Twitter/X via web_search",
+    "Reddit fetch (verification page)",
+    "DEXTools fetch",
+    "Google/web_search keyword set",
+    "ApeSpace",
+    "TheBitTimes"
+  ],
+  "keywords": [
+    "crystal token",
+    "crystal coin",
+    "crystal crypto",
+    "crystal defi",
+    "crystal ecosystem",
+    "new crystal token",
+    "crystal token crypto new launch",
+    "crystal token presale airdrop",
+    "crystal defi token BSC Solana"
+  ],
+  "found_candidates": [
+    {
+      "name": "Crystal Token",
+      "symbol": "CYL",
+      "contract_address": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
+      "status": "skipped_existing",
+      "source": "CoinMarketCap/web_search"
+    },
+    {
+      "name": "DeFi Kingdoms Crystal",
+      "symbol": "CRYSTAL",
+      "contract_address": "0x04b9dA42306B023f3572e106B11D82aAd9D32EBb",
+      "status": "skipped_existing",
+      "source": "CoinGecko/web_search"
+    },
+    {
+      "name": "CRYSTALS Ecosystem",
+      "symbol": "CRYS",
+      "contract_address": "0x1ccb17b8f91ba505c551e95123c8d846731b06ae",
+      "status": "new_added",
+      "source": "ApeSpace/TheBitTimes"
+    }
+  ],
+  "new_tokens_count": 1,
+  "new_tokens": [
+    {
+      "name": "CRYSTALS Ecosystem",
+      "symbol": "CRYS",
+      "contract": "0x1ccb17b8f91ba505c551e95123c8d846731b06ae",
+      "contract_address": "0x1ccb17b8f91ba505c551e95123c8d846731b06ae",
+      "blockchain": "BSC",
+      "price": 0,
+      "market_cap": 0,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 10,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 10,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "Liquidity reported as $0",
+        "24h volume reported as $0",
+        "Only 10 holders reported",
+        "Deployed 2022-09-24; not a new launch",
+        "Owner address present; ownership/renounce not verified",
+        "No official website/social resolved in cycle"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-25T00:00:00+07:00",
+      "sources": [
+        "web_search",
+        "apespace",
+        "thebittimes"
+      ],
+      "notes": "Found via ApeSpace search result for CRYSTALS Ecosystem ($CRYS). TheBitTimes page confirms BSC BEP-20 contract, 100M supply, 10 holders, PancakeSwap/Mdex references, but liquidity/price/volume are all $0/N/A; classified dead/high risk."
+    }
+  ],
+  "skipped_count": 2,
+  "notable": [
+    {
+      "name": "CRYSTALS Ecosystem",
+      "symbol": "CRYS",
+      "contract": "0x1ccb17b8f91ba505c551e95123c8d846731b06ae",
+      "contract_address": "0x1ccb17b8f91ba505c551e95123c8d846731b06ae",
+      "blockchain": "BSC",
+      "price": 0,
+      "market_cap": 0,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 10,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 10,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "Liquidity reported as $0",
+        "24h volume reported as $0",
+        "Only 10 holders reported",
+        "Deployed 2022-09-24; not a new launch",
+        "Owner address present; ownership/renounce not verified",
+        "No official website/social resolved in cycle"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-25T00:00:00+07:00",
+      "sources": [
+        "web_search",
+        "apespace",
+        "thebittimes"
+      ],
+      "notes": "Found via ApeSpace search result for CRYSTALS Ecosystem ($CRYS). TheBitTimes page confirms BSC BEP-20 contract, 100M supply, 10 holders, PancakeSwap/Mdex references, but liquidity/price/volume are all $0/N/A; classified dead/high risk."
+    }
+  ],
+  "errors": [
+    "DexScreener returned anti-bot/challenge via web_fetch",
+    "CoinGecko returned challenge verification via web_fetch",
+    "CoinMarketCap search URL returned error page; direct CYL page worked",
+    "Reddit returned verification page",
+    "DEXTools rendered minimal page only",
+    "Some web_search calls initially failed with unsupported country/SearXNG config; retried without unsupported filters"
+  ]
+}

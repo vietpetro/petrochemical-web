@@ -1,0 +1,32 @@
+{
+  "report_date": "2026-05-17",
+  "generated_at": "2026-05-17T05:15:00+07:00",
+  "summary": {
+    "total_tokens_found": 9,
+    "new_tokens_today": 1,
+    "skipped_tokens": 8,
+    "dead_tokens": 0,
+    "ratings": {"STRONG": 0, "GOOD": 0, "WATCHLIST": 3, "HIGH_RISK": 3}
+  },
+  "top_tokens": [],
+  "high_risk_tokens": [
+    {"name": "CrystalMine", "reason": "Low market cap, low liquidity, near-zero volume"},
+    {"name": "Crystal (Solana)", "reason": "Low market cap, very few holders, risk warning"},
+    {"name": "Crystal Token (CRT)", "reason": "No market data, old contract, unverified ownership"}
+  ],
+  "dead_tokens": [],
+  "trend_analysis": {
+    "new_tokens_count": 1,
+    "popular_blockchains": ["BSC"],
+    "market_sentiment": "Bearish/Cautionary",
+    "alerts": ["Most tokens are low-cap and high-risk projects."]
+  },
+  "all_tokens": [
+    {"name": "CrystalMine", "rating": "HIGH_RISK"},
+    {"name": "Crystal Token (CYL)", "rating": "WATCHLIST"},
+    {"name": "Crystal Stones", "rating": "WATCHLIST"},
+    {"name": "Crystal (Solana)", "rating": "HIGH_RISK"},
+    {"name": "Crystal Token (CRT)", "rating": "HIGH_RISK"},
+    {"name": "Crysta Coin", "rating": "WATCHLIST"}
+  ]
+}

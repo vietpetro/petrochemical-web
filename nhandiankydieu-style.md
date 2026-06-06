@@ -1,0 +1,1 @@
+Man, long day. Body tired, mind heavy. Seek quiet place. Find peace inside. #nhangiandieuky #deepthoughts #selfcare #mindfulness #peace

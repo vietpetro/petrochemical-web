@@ -1,0 +1,111 @@
+businessUnits:
+  - id: petro
+    name: DCorp Petro
+    banner: /assets/banners/petro-hero.jpg
+    intro: "Đối tác chiến lược trong lĩnh vực cung ứng xăng dầu, đảm bảo an ninh năng lượng cho sản xuất và vận tải."
+    services:
+      - title: "Dầu DO"
+        desc: "Dầu Diesel tiêu chuẩn cao cho vận tải và máy móc công nghiệp."
+      - title: "Dầu FO"
+        desc: "Nhiên liệu đốt lò hiệu suất tối ưu cho nhà máy."
+      - title: "Dầu nhờn"
+        desc: "Giải pháp bôi trơn bảo vệ thiết bị bền bỉ."
+    capabilities:
+      - title: "Hệ thống kho bãi"
+        desc: "Hệ thống kho chứa quy mô lớn, vị trí chiến lược."
+      - title: "Đội xe giao nhận"
+        desc: "Đội xe chuyên dụng, vận chuyển an toàn 24/7."
+      - title: "Năng lực cung ứng"
+        desc: "Kết nối nguồn hàng ổn định, đáp ứng sản lượng lớn."
+    customers: ["Nhà máy A", "Tập đoàn Vận tải B", "Khu công nghiệp C"]
+    cta:
+      label: "Yêu cầu báo giá"
+      link: "/business/petro/quote"
+  - id: polymer
+    name: DCorp Polymer
+    banner: /assets/banners/polymer-hero.jpg
+    intro: "Cung ứng nguyên liệu nhựa kỹ thuật cao, đáp ứng đa dạng yêu cầu sản xuất công nghiệp hiện đại."
+    services:
+      - title: "Hạt nhựa PP"
+        desc: "Chất lượng vượt trội, độ bền cao cho sản xuất bao bì, gia dụng."
+      - title: "Hạt nhựa PE"
+        desc: "Dẻo dai, đa ứng dụng trong màng bọc và công nghiệp nhựa."
+      - title: "Hạt nhựa ABS"
+        desc: "Chịu va đập tốt, bề mặt hoàn hảo cho linh kiện điện tử, ô tô."
+    capabilities:
+      - title: "Nguồn cung ổn định"
+        desc: "Đối tác chiến lược toàn cầu, đảm bảo nguồn hàng xuyên suốt."
+      - title: "Ứng dụng đa dạng"
+        desc: "Tư vấn chọn lựa mã nhựa phù hợp cho từng dòng sản phẩm."
+      - title: "Thông số kỹ thuật"
+        desc: "Cam kết datasheet đầy đủ, kiểm định chất lượng nghiêm ngặt."
+    customers: ["Nhà máy Nhựa A", "Công ty Điện tử B", "Xưởng Sản xuất C"]
+    cta:
+      label: "Nhận báo giá chi tiết"
+      link: "/business/polymer/quote"
+  - id: lubricants
+    name: DCorp Lubricants
+    banner: /assets/banners/lubricants-hero.jpg
+    intro: "DCorp Lubricants cung cấp dầu nhờn công nghiệp chất lượng cao, đáp ứng tiêu chuẩn quốc tế."
+    services:
+      - title: "Dầu nhờn công nghiệp"
+        desc: "Dầu nhờn đa dụng cho máy móc, thiết bị trọng công nghiệp."
+      - title: "Dầu nhờn ô tô"
+        desc: "Dầu nhờn engine và truyền động để tối ưu hiệu suất và tuổi thọ xe."
+      - title: "Dầu nhờn đặc biệt"
+        desc: "Dầu nhờn nhiệt độ thấp, độ nhớt cao cho ứng dụng đặc thù."
+    capabilities:
+      - title: "Kho chứa đáp ứng ngay"
+        desc: "Kho hàng lớn, đủ loại, sẵn sàng giao hàng ngay."
+      - title: "Đội ngũ tư vấn kỹ thuật"
+        desc: "Các kỹ sư có経験, hỗ trợ chọn lựa và sử dụng đúng."
+      - title: "Hệ thống phân phối quốc gia"
+        desc: "Mạng lưới Đại lý và nhà phân phối để giao hàng nhanh."
+    customers: ["Nhà máy sản xuất A", "Công ty logistics B", "Xưởng gia công C"]
+    cta:
+      label: "Yêu cầu báo giá"
+      link: "/business/lubricants/quote"
+  - id: energy
+    name: DCorp Energy
+    banner: /assets/banners/energy-hero.jpg
+    intro: "DCorp Energy cung cấp giải pháp năng lượng tổng hợp, từ điện đến nhiệt, giúp doanh nghiệp tối ưu chi phí và bền vững."
+    services:
+      - title: "Giải pháp điện năng tái tạo"
+        desc: "Hệ thống điện mặt trời trên mái nhà, trại gió, lưu trữ năng lượng."
+      - title: "Giải pháp nhiệt công nghiệp"
+        desc: "Hệ thống hơi, nước nóng, làm lạnh cho quá trình sản xuất."
+      - title: "Tư vấn tối ưu năng lượng"
+        desc: "Đánh giá tiêu thụ, đề xuất giải pháp tiết kiệm năng lượng."
+    capabilities:
+      - title: "Đội ngũ kỹ thuật chuyên sâu"
+        desc: "Kinh nghiệm thiết kế, lắp đặt, bảo trì hệ thống năng lượng phức tạp."
+      - title: "Chứng chỉ tiêu chuẩn quốc tế"
+        desc: "Tuân thủ ISO 50001, IEC, và các tiêu chuẩn điện lực."
+      - title: "Hỗ trợ sau bán hàng 24/7"
+        desc: "Đội ngũ kỹ thuật phản hồi nhanh, bảo trì định kỳ."
+    customers: ["Nhà máy dệt may A", "Nhà máy gia công B", "Tập đoàn thực phẩm C"]
+    cta:
+      label: "Yêu cầu báo giá"
+      link: "/business/energy/quote"
+  - id: logistics
+    name: DCorp Logistics
+    banner: /assets/banners/logistics-hero.jpg
+    intro: "DCorp Logistics là nhà cung ứng dịch vụ logistics toàn chuỗi, từ kho, vận chuyển đến phân phối cuối cùng."
+    services:
+      - title: "Vận chuyển đường bộ"
+        desc: "Xe tải nội địa, xe container quốc tế, specialised vehicles."
+      - title: "Kho lưu trữ & quản lý hàng"
+        desc: "Kho hiện đại, hệ thống WMS, dịch vụ cross-docking."
+      - title: "Dịch vụ đóng gói & xử lý đơn hàng"
+        desc: "Đóng gói bảo quản, labeling, thực hiện đơn hàng 이đcommerce."
+    capabilities:
+      - title: "Mạng lưới xe tải rộng"
+        desc: "Hơn 500 xe tảiOwned và đối tác, phủ 전국."
+      - title: "Hệ thống theo dõi hàng hóa real-time"
+        desc: "GPS, IoT, cảnh báo quá trình vận chuyển."
+      - title: "Đội ngũ customs clearance"
+        desc: "Giải thủ tục hải quan nhanh, giảm thời gian tại cảng."
+    customers: ["Nhà sản xuất hàng hóa A", "Nhập khẩu nguyên liệu B", "Nhà bán lẻ C"]
+    cta:
+      label: "Yêu cầu báo giá"
+      link: "/business/logistics/quote"

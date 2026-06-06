@@ -1,0 +1,1244 @@
+{
+  "report_date": "2026-05-19",
+  "generated_at": "2026-05-19T05:15:00+07:00",
+  "summary": {
+    "total_tokens_found": 21,
+    "new_tokens_today": 9,
+    "skipped_tokens": 9,
+    "dead_tokens": 4,
+    "ratings": {
+      "STRONG": 0,
+      "GOOD": 0,
+      "WATCHLIST": 4,
+      "HIGH_RISK": 10
+    }
+  },
+  "top_tokens": [
+    {
+      "name": "Crystal Stones",
+      "symbol": "CRYSTAL STONES",
+      "contract": "0xe252FCb1Aa2E0876E9B5f3eD1e15B9b4d11A0b00",
+      "contract_address": "0xe252FCb1Aa2E0876E9B5f3eD1e15B9b4d11A0b00",
+      "blockchain": "BSC",
+      "price": 8.421375220316576e-05,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://crystalstones.org/",
+      "twitter": null,
+      "telegram": null,
+      "score": 55,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "RWA/mineral backing claims require off-chain verification",
+        "Sell tax 6% and buy tax 3%",
+        "Liquidity/volume not confirmed in this cycle",
+        "Audit claim by Ave.ai not independently verified"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "coinmooner",
+        "bscscan"
+      ],
+      "notes": "Website live; claims CMC listing, PancakeSwap trading, locked tokens on PinkSale; launched 2023-09-06."
+    },
+    {
+      "name": "Crystal Token",
+      "symbol": "CYL",
+      "contract": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
+      "contract_address": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
+      "blockchain": "Ethereum",
+      "price": 0.00256669,
+      "market_cap": null,
+      "volume_24h": 124172.54,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://www.crystaltoken.co",
+      "twitter": null,
+      "telegram": null,
+      "score": 50,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Official website DNS failed during fetch",
+        "Older token; not a new launch",
+        "Liquidity/holders not verified in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "coinmarketcap",
+        "etherscan_search"
+      ],
+      "notes": "CMC reports 3 active markets and ~$124K 24h volume; website did not resolve from fetch."
+    },
+    {
+      "name": "CrystalFinance Token",
+      "symbol": "CRYSTAL",
+      "contract": "0x968Dbc00b5b63e981145d447A008038C58ae09aC",
+      "contract_address": "0x968Dbc00b5b63e981145d447A008038C58ae09aC",
+      "blockchain": "Polygon",
+      "price": 0.0002859,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://crystal-finance.gitbook.io/crystal-finance",
+      "twitter": "https://x.com/CrystlFinance",
+      "telegram": "https://t.me/CrystlFinance",
+      "score": 47,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Project appears old rather than newly launched",
+        "DEX price seen in search snippet but liquidity/volume not independently verified this cycle",
+        "Social footprint appears small; Telegram snippet showed only ~143 members",
+        "No current audit/honeypot evidence confirmed in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 6,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "gitbook",
+        "telegram_snippet",
+        "github_search"
+      ],
+      "notes": "Polygon DeFi farming project documentation is live; search results indicate associated social accounts, but current on-chain strength could not be fully validated."
+    },
+    {
+      "name": "Crysta Coin",
+      "symbol": "CRST",
+      "contract": "0xf38b7bc8ad0dc1dd4963fc3b9358e1fc0a4863e7",
+      "contract_address": "0xf38b7bc8ad0dc1dd4963fc3b9358e1fc0a4863e7",
+      "blockchain": "BSC",
+      "price": 0.01698688914515502,
+      "market_cap": 1698688.9,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 42,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Launched 2022, not a new launch",
+        "No reliable current volume/liquidity found in this cycle",
+        "Website/social links not resolved from fetched page",
+        "No direct honeypot/rug flag found via search, but contract not deeply audited"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "coinmooner"
+      ],
+      "notes": "CoinMooner lists BSC contract, price and market cap; needs liquidity/volume verification."
+    },
+    {
+      "name": "Crystal Token",
+      "symbol": "CRT",
+      "contract": "0x84817f5b8523c063d9574b36c5b670a046bb5810",
+      "contract_address": "0x84817f5b8523c063d9574b36c5b670a046bb5810",
+      "blockchain": "BSC",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 2374,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 39,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "No market cap/volume/liquidity visible on BscScan fetch",
+        "Old Solidity compiler v0.4.24, optimization disabled",
+        "Ownership functions present; ownership status not verified",
+        "No website/social found in cycle"
+      ],
+      "community_score": 0,
+      "security_score": 4,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "bscscan"
+      ],
+      "notes": "BscScan confirms verified BEP-20 token with 980M max supply and 2,374 holders; insufficient market/social data."
+    }
+  ],
+  "high_risk_tokens": [
+    {
+      "name": "Crystal Clear",
+      "symbol": "CRYSTAL",
+      "contract": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "contract_address": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "blockchain": "Base",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2,
+      "website": "https://www.clanker.world/clanker/0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "twitter": null,
+      "telegram": null,
+      "score": 9,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BaseScan shows only 2 holders and price effectively $0",
+        "No market cap, liquidity, or active trading validation found in this cycle",
+        "No official website/social community located beyond Clanker listing",
+        "No submitted contract security audit on BaseScan"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "clanker",
+        "basescan"
+      ],
+      "notes": "Likely low-activity / abandoned Base token surfaced by search. Minimal holder base and no meaningful market activity visible."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "contract_address": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "blockchain": "Solana",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": null,
+      "website": "https://coinswitch.co/web3/crystal-D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "twitter": null,
+      "telegram": null,
+      "score": 10,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "CoinSwitch page reports no official description and DYOR warning",
+        "Market cap, holders, total liquidity and price are unavailable",
+        "24h/30m/1h/4h movement is 0%, volume is ₹0 and transactions are 0",
+        "CoinSwitch FAQ says buying is restricted due to low liquidity",
+        "No official website, Twitter, Telegram, audit, or holder distribution found in this cycle"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T04:00:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "coinswitch"
+      ],
+      "notes": "New Solana CRYSTAL candidate from CoinSwitch result. Data indicates effectively no liquidity/trading activity; marked dead/high risk. Not related to existing Ha1N... or HaCLa... Solana CRYSTAL entries."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "0x40988fbaa819c1902d59cea15eeed7e8733ae14c",
+      "contract_address": "0x40988fbaa819c1902d59cea15eeed7e8733ae14c",
+      "blockchain": "Base",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 4,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 12,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Only 4 holder wallets reported",
+        "24h transactions, volume and liquidity all N/A in fetched tracker",
+        "No official website/social found",
+        "No direct honeypot/rug flag found but contract audit/ownership not verified"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "thebittimes"
+      ],
+      "notes": "Base token candidate first listed ~1 year ago per TheBitTimes; extremely thin public/on-chain footprint."
+    },
+    {
+      "name": "Crystal Diamond",
+      "symbol": "CLD",
+      "contract": "0x83c03473fd8b340cda7ce09014f4e0b568586f90",
+      "contract_address": "0x83c03473fd8b340cda7ce09014f4e0b568586f90",
+      "blockchain": "Ethereum",
+      "price": 7.347e-14,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 14,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Extremely low quoted price with no strong market validation",
+        "No official website or credible social channels verified in this cycle",
+        "Third-party trackers flag unverified supply / low volume",
+        "Elevated probability of illiquidity or abandoned token"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "cryptorank",
+        "coinranking",
+        "coincarp"
+      ],
+      "notes": "Appeared in search results as Ethereum Uniswap pair CLD/WETH; supporting data came mostly from low-confidence third-party trackers."
+    },
+    {
+      "name": "Cyber Crystal",
+      "symbol": "Crystal",
+      "contract": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "contract_address": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "blockchain": "BSC",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2613,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 16,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BscScan shows price $0.00 and no market cap",
+        "Contract source appears not verified/published in fetched BscScan content",
+        "No liquidity/volume/social validation found",
+        "Holder count exists but no active market evidence"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "bscscan"
+      ],
+      "notes": "BSC Cyber Crystal result found via BscScan/search. Despite 2,613 holders, fetched market data indicates $0 price and no visible active market; marked dead/highly unsafe."
+    },
+    {
+      "name": "Crystal Dragon",
+      "symbol": "Crystal Dragon",
+      "contract": "0x441c82aa65a4286eb9811f9141b3c2d7c305d7a4",
+      "contract_address": "0x441c82aa65a4286eb9811f9141b3c2d7c305d7a4",
+      "blockchain": "Base",
+      "price": 1.81e-06,
+      "market_cap": 1810.38,
+      "volume_24h": 0,
+      "liquidity": 1700,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 17,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Very low liquidity (~$1.7K) and market cap/FDV (~$1.8K) from DexScreener search snippet",
+        "24h txns reported as 0 and volume N/A in search snippet; may be inactive/illiquid",
+        "No official website, Twitter, Telegram, audit, or holder distribution found in this cycle",
+        "DexScreener direct fetch blocked by anti-bot page; only search-snippet data available"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T04:40:00+07:00",
+      "sources": [
+        "web_search",
+        "dexscreener_snippet"
+      ],
+      "notes": "Base Uniswap v3 Crystal Dragon/WETH pair surfaced by web search. Treat as highly speculative and illiquid; needs explorer/contract verification before any consideration."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "Ha1NCMKuvZ7vXnaDbUnF6rbQdpbi733XxisQkmceGPdk",
+      "contract_address": "Ha1NCMKuvZ7vXnaDbUnF6rbQdpbi733XxisQkmceGPdk",
+      "blockchain": "Solana",
+      "price": null,
+      "market_cap": 5800,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 9,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 18,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Very low market cap (~$5.8K)",
+        "Only 9 holders reported by Phantom snippet",
+        "Solflare-related result shows risk status warning/no price for another similar CRYSTAL token",
+        "No website/social found"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "phantom",
+        "solflare"
+      ],
+      "notes": "Solana CRYSTAL candidate; contract differs from Solflare result. Treat as high risk until verified."
+    },
+    {
+      "name": "Help Crystal",
+      "symbol": "Crystal",
+      "contract": "DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "contract_address": "DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "blockchain": "Solana",
+      "price": 1.591e-05,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://pump.fun/coin/DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "twitter": null,
+      "telegram": null,
+      "score": 18,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Only weak public footprint found; mainly pump.fun listing",
+        "No verified website, Twitter, or Telegram found for this specific token",
+        "Liquidity/volume/holders not independently confirmed in this cycle",
+        "Likely speculative memecoin with elevated rug/liquidity risk"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "pump_fun",
+        "web_search"
+      ],
+      "notes": "Discovered via DexScreener search result snippet as Solana PumpSwap pair Help Crystal / SOL. Very limited validation available."
+    }
+  ],
+  "dead_tokens": [
+    {
+      "name": "CrystalSupply",
+      "symbol": "TAL",
+      "contract": "0x126e7B338D242c9B9D03d6243b9f501d137d3F58",
+      "contract_address": "0x126e7B338D242c9B9D03d6243b9f501d137d3F58",
+      "blockchain": "Monad",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": null,
+      "website": "https://crystal.supply/",
+      "twitter": "https://x.com/crystal_supply",
+      "telegram": null,
+      "score": 28,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "No active miners, zero deployed value, and zero visible rounds on fetched protocol page",
+        "Contract page could not be fetched directly due to anti-bot protection; on-chain market data unverified",
+        "Project is very new and footprint is thin (docs/site/GitHub only)",
+        "No Telegram/community depth or independent audit evidence found in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 5,
+      "discovered_at": "2026-05-19T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "gitbook",
+        "github_search"
+      ],
+      "notes": "Monad project with public docs, GitHub, and website showing TAL contract, but fetched site currently shows zero deployed activity / zero active miners. Watch only until real on-chain usage appears."
+    },
+    {
+      "name": "Crystal Clear",
+      "symbol": "CRYSTAL",
+      "contract": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "contract_address": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "blockchain": "Base",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2,
+      "website": "https://www.clanker.world/clanker/0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "twitter": null,
+      "telegram": null,
+      "score": 9,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BaseScan shows only 2 holders and price effectively $0",
+        "No market cap, liquidity, or active trading validation found in this cycle",
+        "No official website/social community located beyond Clanker listing",
+        "No submitted contract security audit on BaseScan"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "clanker",
+        "basescan"
+      ],
+      "notes": "Likely low-activity / abandoned Base token surfaced by search. Minimal holder base and no meaningful market activity visible."
+    },
+    {
+      "name": "Cyber Crystal",
+      "symbol": "Crystal",
+      "contract": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "contract_address": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "blockchain": "BSC",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2613,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 16,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BscScan shows price $0.00 and no market cap",
+        "Contract source appears not verified/published in fetched BscScan content",
+        "No liquidity/volume/social validation found",
+        "Holder count exists but no active market evidence"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "bscscan"
+      ],
+      "notes": "BSC Cyber Crystal result found via BscScan/search. Despite 2,613 holders, fetched market data indicates $0 price and no visible active market; marked dead/highly unsafe."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "contract_address": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "blockchain": "Solana",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": null,
+      "website": "https://coinswitch.co/web3/crystal-D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "twitter": null,
+      "telegram": null,
+      "score": 10,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "CoinSwitch page reports no official description and DYOR warning",
+        "Market cap, holders, total liquidity and price are unavailable",
+        "24h/30m/1h/4h movement is 0%, volume is ₹0 and transactions are 0",
+        "CoinSwitch FAQ says buying is restricted due to low liquidity",
+        "No official website, Twitter, Telegram, audit, or holder distribution found in this cycle"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T04:00:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "coinswitch"
+      ],
+      "notes": "New Solana CRYSTAL candidate from CoinSwitch result. Data indicates effectively no liquidity/trading activity; marked dead/high risk. Not related to existing Ha1N... or HaCLa... Solana CRYSTAL entries."
+    }
+  ],
+  "trend_analysis": {
+    "new_tokens_count": 9,
+    "popular_blockchains": [
+      {
+        "blockchain": "Base",
+        "count": 3
+      },
+      {
+        "blockchain": "BSC",
+        "count": 2
+      },
+      {
+        "blockchain": "Polygon",
+        "count": 1
+      },
+      {
+        "blockchain": "Monad",
+        "count": 1
+      },
+      {
+        "blockchain": "Ethereum",
+        "count": 1
+      },
+      {
+        "blockchain": "Solana",
+        "count": 1
+      }
+    ],
+    "market_sentiment": "Phòng thủ / rủi ro cao: phần lớn token mới có thanh khoản thấp, volume bằng 0 hoặc footprint xã hội yếu.",
+    "alerts": [
+      "4 token được đánh dấu DEAD TOKEN trong toàn bộ database.",
+      "Toàn bộ token mới hôm nay thuộc nhóm HIGH RISK hoặc DEAD TOKEN; không có ứng viên GOOD/STRONG.",
+      "Token mới hôm nay: 9 so với hôm qua: 3."
+    ]
+  },
+  "all_tokens": [
+    {
+      "name": "Crystals",
+      "symbol": "CRYS",
+      "contract": "0x9cECeaB39b763063a8444eCaF20B303ED4061cFf",
+      "blockchain": "BSC",
+      "status": "EXISTING"
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "N/A (ERC404)",
+      "blockchain": "Ethereum",
+      "status": "EXISTING"
+    },
+    {
+      "name": "Crystal (Arbitrum)",
+      "symbol": "CRYSTAL",
+      "contract": "N/A",
+      "blockchain": "Arbitrum",
+      "status": "EXISTING"
+    },
+    {
+      "name": "Crysta Coin",
+      "symbol": "CRST",
+      "contract": "0xf38b7bc8ad0dc1dd4963fc3b9358e1fc0a4863e7",
+      "contract_address": "0xf38b7bc8ad0dc1dd4963fc3b9358e1fc0a4863e7",
+      "blockchain": "BSC",
+      "price": 0.01698688914515502,
+      "market_cap": 1698688.9,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 42,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Launched 2022, not a new launch",
+        "No reliable current volume/liquidity found in this cycle",
+        "Website/social links not resolved from fetched page",
+        "No direct honeypot/rug flag found via search, but contract not deeply audited"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "coinmooner"
+      ],
+      "notes": "CoinMooner lists BSC contract, price and market cap; needs liquidity/volume verification."
+    },
+    {
+      "name": "Crystal Token",
+      "symbol": "CRT",
+      "contract": "0x84817f5b8523c063d9574b36c5b670a046bb5810",
+      "contract_address": "0x84817f5b8523c063d9574b36c5b670a046bb5810",
+      "blockchain": "BSC",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 2374,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 39,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "No market cap/volume/liquidity visible on BscScan fetch",
+        "Old Solidity compiler v0.4.24, optimization disabled",
+        "Ownership functions present; ownership status not verified",
+        "No website/social found in cycle"
+      ],
+      "community_score": 0,
+      "security_score": 4,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "bscscan"
+      ],
+      "notes": "BscScan confirms verified BEP-20 token with 980M max supply and 2,374 holders; insufficient market/social data."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "Ha1NCMKuvZ7vXnaDbUnF6rbQdpbi733XxisQkmceGPdk",
+      "contract_address": "Ha1NCMKuvZ7vXnaDbUnF6rbQdpbi733XxisQkmceGPdk",
+      "blockchain": "Solana",
+      "price": null,
+      "market_cap": 5800,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 9,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 18,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Very low market cap (~$5.8K)",
+        "Only 9 holders reported by Phantom snippet",
+        "Solflare-related result shows risk status warning/no price for another similar CRYSTAL token",
+        "No website/social found"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "phantom",
+        "solflare"
+      ],
+      "notes": "Solana CRYSTAL candidate; contract differs from Solflare result. Treat as high risk until verified."
+    },
+    {
+      "name": "Crystal Stones",
+      "symbol": "CRYSTAL STONES",
+      "contract": "0xe252FCb1Aa2E0876E9B5f3eD1e15B9b4d11A0b00",
+      "contract_address": "0xe252FCb1Aa2E0876E9B5f3eD1e15B9b4d11A0b00",
+      "blockchain": "BSC",
+      "price": 8.421375220316576e-05,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://crystalstones.org/",
+      "twitter": null,
+      "telegram": null,
+      "score": 55,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "RWA/mineral backing claims require off-chain verification",
+        "Sell tax 6% and buy tax 3%",
+        "Liquidity/volume not confirmed in this cycle",
+        "Audit claim by Ave.ai not independently verified"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "coinmooner",
+        "bscscan"
+      ],
+      "notes": "Website live; claims CMC listing, PancakeSwap trading, locked tokens on PinkSale; launched 2023-09-06."
+    },
+    {
+      "name": "Crystal Token",
+      "symbol": "CYL",
+      "contract": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
+      "contract_address": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
+      "blockchain": "Ethereum",
+      "price": 0.00256669,
+      "market_cap": null,
+      "volume_24h": 124172.54,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://www.crystaltoken.co",
+      "twitter": null,
+      "telegram": null,
+      "score": 50,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Official website DNS failed during fetch",
+        "Older token; not a new launch",
+        "Liquidity/holders not verified in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 7,
+      "discovered_at": "2026-05-17T00:40:00+07:00",
+      "sources": [
+        "coinmarketcap",
+        "etherscan_search"
+      ],
+      "notes": "CMC reports 3 active markets and ~$124K 24h volume; website did not resolve from fetch."
+    },
+    {
+      "name": "CrystalMine",
+      "symbol": "CRYSTAL",
+      "contract": "0x4aDE32598Fe2CaA549Fd7c720BB91C0111314444",
+      "contract_address": "0x4aDE32598Fe2CaA549Fd7c720BB91C0111314444",
+      "blockchain": "BSC",
+      "price": 6.423e-06,
+      "market_cap": 6423,
+      "volume_24h": 7.5,
+      "liquidity": 8000,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 32,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Very low market cap (~$6.4K)",
+        "Low liquidity (~$8K)",
+        "Very low/near-zero 24h volume in secondary sources",
+        "Sparse recent transactions on DexScreener snippets",
+        "Website/social links mentioned but not resolved in this cycle",
+        "No holder distribution or contract audit verified"
+      ],
+      "community_score": 5,
+      "security_score": 5,
+      "discovered_at": "2026-05-17T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "dexscreener_snippet",
+        "coinboom",
+        "coinstats"
+      ],
+      "notes": "New-to-database BSC CrystalMine result found from DexScreener/search snippets. Contract/pair data should be rechecked before any consideration."
+    },
+    {
+      "name": "Help Crystal",
+      "symbol": "Crystal",
+      "contract": "DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "contract_address": "DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "blockchain": "Solana",
+      "price": 1.591e-05,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://pump.fun/coin/DtUafn4KKjxkjyv9hg8WzbKn1QeEZFKMPzKgUoxdpump",
+      "twitter": null,
+      "telegram": null,
+      "score": 18,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Only weak public footprint found; mainly pump.fun listing",
+        "No verified website, Twitter, or Telegram found for this specific token",
+        "Liquidity/volume/holders not independently confirmed in this cycle",
+        "Likely speculative memecoin with elevated rug/liquidity risk"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "pump_fun",
+        "web_search"
+      ],
+      "notes": "Discovered via DexScreener search result snippet as Solana PumpSwap pair Help Crystal / SOL. Very limited validation available."
+    },
+    {
+      "name": "CrystalFinance Token",
+      "symbol": "CRYSTAL",
+      "contract": "0x968Dbc00b5b63e981145d447A008038C58ae09aC",
+      "contract_address": "0x968Dbc00b5b63e981145d447A008038C58ae09aC",
+      "blockchain": "Polygon",
+      "price": 0.0002859,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": "https://crystal-finance.gitbook.io/crystal-finance",
+      "twitter": "https://x.com/CrystlFinance",
+      "telegram": "https://t.me/CrystlFinance",
+      "score": 47,
+      "rating": "WATCHLIST",
+      "dead_token": false,
+      "risks": [
+        "Project appears old rather than newly launched",
+        "DEX price seen in search snippet but liquidity/volume not independently verified this cycle",
+        "Social footprint appears small; Telegram snippet showed only ~143 members",
+        "No current audit/honeypot evidence confirmed in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 6,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "gitbook",
+        "telegram_snippet",
+        "github_search"
+      ],
+      "notes": "Polygon DeFi farming project documentation is live; search results indicate associated social accounts, but current on-chain strength could not be fully validated."
+    },
+    {
+      "name": "Crystal Diamond",
+      "symbol": "CLD",
+      "contract": "0x83c03473fd8b340cda7ce09014f4e0b568586f90",
+      "contract_address": "0x83c03473fd8b340cda7ce09014f4e0b568586f90",
+      "blockchain": "Ethereum",
+      "price": 7.347e-14,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 14,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Extremely low quoted price with no strong market validation",
+        "No official website or credible social channels verified in this cycle",
+        "Third-party trackers flag unverified supply / low volume",
+        "Elevated probability of illiquidity or abandoned token"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-18T07:53:00+07:00",
+      "sources": [
+        "dexscreener_search_result",
+        "cryptorank",
+        "coinranking",
+        "coincarp"
+      ],
+      "notes": "Appeared in search results as Ethereum Uniswap pair CLD/WETH; supporting data came mostly from low-confidence third-party trackers."
+    },
+    {
+      "name": "Crypton Crystal",
+      "symbol": "CPC",
+      "contract": "0x3db041CD692135F1f39aDB2B02B59E6678814F51",
+      "contract_address": "0x3db041CD692135F1f39aDB2B02B59E6678814F51",
+      "blockchain": "BSC",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 24,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Launched 2022-06-26; not a new launch",
+        "CoinMooner/web page gives narrative but no reliable current liquidity/volume in fetched content",
+        "NFT-backed/social-currency claims require off-chain verification",
+        "No official website/social links resolved in this cycle",
+        "No audit, holder distribution, ownership, or honeypot verification found"
+      ],
+      "community_score": 5,
+      "security_score": 4,
+      "discovered_at": "2026-05-19T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "coinmooner",
+        "web_fetch"
+      ],
+      "notes": "New-to-database BSC result from CoinMooner. Contract visible in search snippet; fetched page describes NFT-backed social currency but lacks current market quality data. Treat as high risk until BscScan/DEX liquidity verified."
+    },
+    {
+      "name": "CrystalToken / Crystl Finance",
+      "symbol": "CRYSTL",
+      "contract": "0x76bf0c28e604cc3fe9967c83b3c3f31c213cfe64",
+      "contract_address": "0x76bf0c28e604cc3fe9967c83b3c3f31c213cfe64",
+      "blockchain": "Polygon",
+      "price": 0.000145,
+      "market_cap": 1800,
+      "volume_24h": 2.32,
+      "liquidity": 0,
+      "holders": 6168,
+      "website": "https://crystl.finance",
+      "twitter": null,
+      "telegram": null,
+      "score": 26,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Token flagged unverified by Phantom",
+        "Extremely low market cap (~$1.8K) and 24h volume (~$2.32)",
+        "LiveCoinWatch reports liquidity ±2% as $0.0000",
+        "Old DeFi/yield farm project, not a new launch",
+        "No current active socials verified in this cycle"
+      ],
+      "community_score": 5,
+      "security_score": 4,
+      "discovered_at": "2026-05-19T00:40:00+07:00",
+      "sources": [
+        "web_search",
+        "livecoinwatch",
+        "phantom"
+      ],
+      "notes": "Crystl Finance / CrystalToken on Polygon. Has many holders but effectively negligible current trading activity; likely dormant/high-risk."
+    },
+    {
+      "name": "CrystalSupply",
+      "symbol": "TAL",
+      "contract": "0x126e7B338D242c9B9D03d6243b9f501d137d3F58",
+      "contract_address": "0x126e7B338D242c9B9D03d6243b9f501d137d3F58",
+      "blockchain": "Monad",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": null,
+      "website": "https://crystal.supply/",
+      "twitter": "https://x.com/crystal_supply",
+      "telegram": null,
+      "score": 28,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "No active miners, zero deployed value, and zero visible rounds on fetched protocol page",
+        "Contract page could not be fetched directly due to anti-bot protection; on-chain market data unverified",
+        "Project is very new and footprint is thin (docs/site/GitHub only)",
+        "No Telegram/community depth or independent audit evidence found in this cycle"
+      ],
+      "community_score": 8,
+      "security_score": 5,
+      "discovered_at": "2026-05-19T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "gitbook",
+        "github_search"
+      ],
+      "notes": "Monad project with public docs, GitHub, and website showing TAL contract, but fetched site currently shows zero deployed activity / zero active miners. Watch only until real on-chain usage appears."
+    },
+    {
+      "name": "Crystal Clear",
+      "symbol": "CRYSTAL",
+      "contract": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "contract_address": "0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "blockchain": "Base",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2,
+      "website": "https://www.clanker.world/clanker/0x0C4732FD214c15A00fe4d0CB40fEa810b55262cd",
+      "twitter": null,
+      "telegram": null,
+      "score": 9,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BaseScan shows only 2 holders and price effectively $0",
+        "No market cap, liquidity, or active trading validation found in this cycle",
+        "No official website/social community located beyond Clanker listing",
+        "No submitted contract security audit on BaseScan"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T01:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "clanker",
+        "basescan"
+      ],
+      "notes": "Likely low-activity / abandoned Base token surfaced by search. Minimal holder base and no meaningful market activity visible."
+    },
+    {
+      "name": "Crypto Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "0xd910ba75a9f2e9ce34d21cdd973ed4ba961de4b5",
+      "contract_address": "0xd910ba75a9f2e9ce34d21cdd973ed4ba961de4b5",
+      "blockchain": "Ethereum",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 22,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 22,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Only low-confidence tracker data found (TheBitTimes); no official website/social verified",
+        "Low holder count (22) despite July 2025 deployment",
+        "No current volume/liquidity visible in fetched data",
+        "No direct honeypot/rug flag found via search, but contract security/audit not verified"
+      ],
+      "community_score": 0,
+      "security_score": 4,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "thebittimes"
+      ],
+      "notes": "Ethereum ERC-20 candidate surfaced by search. TheBitTimes lists deployment Jul-15-2025, supply 980M, holders 22, Uniswap/ParaSwap links; needs explorer/DEX validation."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "0x40988fbaa819c1902d59cea15eeed7e8733ae14c",
+      "contract_address": "0x40988fbaa819c1902d59cea15eeed7e8733ae14c",
+      "blockchain": "Base",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": null,
+      "liquidity": null,
+      "holders": 4,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 12,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Only 4 holder wallets reported",
+        "24h transactions, volume and liquidity all N/A in fetched tracker",
+        "No official website/social found",
+        "No direct honeypot/rug flag found but contract audit/ownership not verified"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "thebittimes"
+      ],
+      "notes": "Base token candidate first listed ~1 year ago per TheBitTimes; extremely thin public/on-chain footprint."
+    },
+    {
+      "name": "Cyber Crystal",
+      "symbol": "Crystal",
+      "contract": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "contract_address": "0x6ad7e691f1d2723523e70751f82052a8a2c47726",
+      "blockchain": "BSC",
+      "price": 0.0,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": 2613,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 16,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "BscScan shows price $0.00 and no market cap",
+        "Contract source appears not verified/published in fetched BscScan content",
+        "No liquidity/volume/social validation found",
+        "Holder count exists but no active market evidence"
+      ],
+      "community_score": 0,
+      "security_score": 2,
+      "discovered_at": "2026-05-19T02:40:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "bscscan"
+      ],
+      "notes": "BSC Cyber Crystal result found via BscScan/search. Despite 2,613 holders, fetched market data indicates $0 price and no visible active market; marked dead/highly unsafe."
+    },
+    {
+      "name": "Crystal",
+      "symbol": "CRYSTAL",
+      "contract": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "contract_address": "D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "blockchain": "Solana",
+      "price": null,
+      "market_cap": null,
+      "volume_24h": 0,
+      "liquidity": 0,
+      "holders": null,
+      "website": "https://coinswitch.co/web3/crystal-D5bBTWycDaM6RAgiziVpoX3iH8GFuWnX2SAVZyoMQPPP",
+      "twitter": null,
+      "telegram": null,
+      "score": 10,
+      "rating": "DEAD TOKEN",
+      "dead_token": true,
+      "risks": [
+        "CoinSwitch page reports no official description and DYOR warning",
+        "Market cap, holders, total liquidity and price are unavailable",
+        "24h/30m/1h/4h movement is 0%, volume is ₹0 and transactions are 0",
+        "CoinSwitch FAQ says buying is restricted due to low liquidity",
+        "No official website, Twitter, Telegram, audit, or holder distribution found in this cycle"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T04:00:00+07:00",
+      "sources": [
+        "web_search",
+        "web_fetch",
+        "coinswitch"
+      ],
+      "notes": "New Solana CRYSTAL candidate from CoinSwitch result. Data indicates effectively no liquidity/trading activity; marked dead/high risk. Not related to existing Ha1N... or HaCLa... Solana CRYSTAL entries."
+    },
+    {
+      "name": "Crystal Dragon",
+      "symbol": "Crystal Dragon",
+      "contract": "0x441c82aa65a4286eb9811f9141b3c2d7c305d7a4",
+      "contract_address": "0x441c82aa65a4286eb9811f9141b3c2d7c305d7a4",
+      "blockchain": "Base",
+      "price": 1.81e-06,
+      "market_cap": 1810.38,
+      "volume_24h": 0,
+      "liquidity": 1700,
+      "holders": null,
+      "website": null,
+      "twitter": null,
+      "telegram": null,
+      "score": 17,
+      "rating": "HIGH RISK",
+      "dead_token": false,
+      "risks": [
+        "Very low liquidity (~$1.7K) and market cap/FDV (~$1.8K) from DexScreener search snippet",
+        "24h txns reported as 0 and volume N/A in search snippet; may be inactive/illiquid",
+        "No official website, Twitter, Telegram, audit, or holder distribution found in this cycle",
+        "DexScreener direct fetch blocked by anti-bot page; only search-snippet data available"
+      ],
+      "community_score": 0,
+      "security_score": 3,
+      "discovered_at": "2026-05-19T04:40:00+07:00",
+      "sources": [
+        "web_search",
+        "dexscreener_snippet"
+      ],
+      "notes": "Base Uniswap v3 Crystal Dragon/WETH pair surfaced by web search. Treat as highly speculative and illiquid; needs explorer/contract verification before any consideration."
+    }
+  ]
+}

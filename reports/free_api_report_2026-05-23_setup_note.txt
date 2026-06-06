@@ -1,0 +1,18 @@
+2026-05-23 daily-free-api-report setup note
+
+Local 9router /v1/models reachable at http://127.0.0.1:20128/v1.
+Tested with configured 9router key:
+- cerebras/gpt-oss-120b: OK
+- gemini/gemini-3.1-flash-lite-preview: endpoint returned empty/non-JSON in quick test; not selected as first priority today
+- groq/openai/gpt-oss-120b: OK
+- openrouter/nvidia/nemotron-3-nano-30b-a3b:free: OK
+- groq/qwen/qwen3-32b: OK
+
+Existing OpenClaw aliases already present:
+- free-cerebras -> 9router/cerebras/gpt-oss-120b
+- free-groq -> 9router/groq/llama-3.3-70b-versatile
+- free-openrouter-nano -> 9router/openrouter/nvidia/nemotron-3-nano-30b-a3b:free
+- free-gemini-lite -> 9router/gemini/gemini-3.1-flash-lite-preview
+
+No config change made: aliases/fallback choices already exist; primary remains 9router/cx/gpt-5.5.
+Recommended manual per-run override for free usage: model=free-cerebras, fallback free-groq/free-openrouter-nano.
