@@ -4,8 +4,8 @@ import BusinessIndex from '@/pages/business/BusinessIndex.vue';
 import BusinessDetail from '@/pages/business/BusinessDetail.vue';
 import QuotePage from '@/pages/business/QuotePage.vue';
 // import AboutPage from '@/pages/AboutPage.vue';
-// import NewsIndex from '@/pages/news/NewsIndex.vue';
-// import NewsDetail from '@/pages/news/NewsDetail.vue';
+import NewsIndex from '@/pages/news/NewsIndex.vue';
+import NewsDetail from '@/pages/news/NewsDetail.vue';
 // import CareerLayout from '@/pages/career/CareerLayout.vue';
 // import CareerSection from '@/pages/career/CareerSection.vue';
 // import ContactPage from '@/pages/ContactPage.vue';
@@ -16,8 +16,8 @@ const routes = [
   { path: '/business', name: 'business', component: BusinessIndex, meta: { title: 'Business Unit' } },
   { path: '/business/:unitId', name: 'business-detail', component: BusinessDetail, meta: { title: 'Business Unit' } },
   { path: '/business/:unitId/quote', name: 'business-quote', component: QuotePage, meta: { title: 'Yêu cầu báo giá' } },
-  // { path: '/news', name: 'news', component: NewsIndex, meta: { title: 'Tin tức' } },
-  // { path: '/news/:slug', name: 'news-detail', component: NewsDetail, meta: { title: 'Tin tức' } },
+  { path: '/news', name: 'news', component: NewsIndex, meta: { title: 'Tin tức' } },
+  { path: '/news/:slug', name: 'news-detail', component: NewsDetail, meta: { title: 'Tin tức' } },
   // { path: '/blog', redirect: '/news' },
   // { path: '/blog/:slug', redirect: to => `/news/${to.params.slug}` },
   // {
