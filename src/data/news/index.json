@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "news-test-h-th-ng-ng-b-i-dcorp",
+    "title": "Test h??? th???ng ????ng b??i DCorp",
+    "slug": "test-h-th-ng-ng-b-i-dcorp",
+    "date": "2026-06-09",
+    "source": "Telegram",
+    "sourceUrl": "",
+    "image": "https://example.com/image.jpg",
+    "telegramSenderId": ""
+  }
+]
